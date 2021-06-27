@@ -20,4 +20,9 @@ class LaraInviteModel extends Model
     {
         return $this->belongsTo(config('larainvite.UserModel'));
     }
+
+    public function getPhoneAttribute()
+    {
+        return $this->email;
+    }
 }
