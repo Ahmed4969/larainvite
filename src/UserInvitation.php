@@ -126,9 +126,9 @@ class UserInvitation
      */
     public function validateEmail($email)
     {
-        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            throw new \RuntimeException('Invalid Email Address', 1);
-        }
+//        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+//            throw new \RuntimeException('Invalid Email Address', 1);
+//        }
         return $this;
     }
 }
