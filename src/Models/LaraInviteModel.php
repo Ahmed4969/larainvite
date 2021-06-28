@@ -21,7 +21,7 @@ class LaraInviteModel extends Model
         return $this->belongsTo(config('larainvite.UserModel'));
     }
 
-    public function getPhoneAttribute()
+    public function getFingerPrintAttribute()
     {
         return $this->email;
     }
